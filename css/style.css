@@ -1,0 +1,99 @@
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Whitney, Helvetica, Arial, sans-serif!important;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #f8f8f8;
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 8px 6px -6px #eee;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #696B79;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    min-height: 100vh;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    font-size: 14px;
+    color: #696B79;
+}
+
+/* Adjustments for Components */
+.search-div {
+    display: flex;
+    width: 39%;
+    background-color: #eee;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 3px;
+}
+
+.search-div input {
+    width: 70%;
+    border: none;
+    background-color: #eee;
+}
+
+/* Buttons */
+.button {
+    background-color: #ff3f6c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #e0335f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .section {
+        padding: 60px 10px;
+    }
+}
